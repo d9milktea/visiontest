@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>視力檢查</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="letter-container">
+      <!-- 固定位置的反饋訊息區域 -->
+      <div id="feedback" class="feedback-box"></div>
+      <div class="letter-box">
+        <div class="letter" id="letter">E</div>
+      </div>
+    </div>
+    <div class="options">
+      <button onclick="checkDirection('up')">↑</button>
+      <button onclick="checkDirection('down')">↓</button>
+      <button onclick="checkDirection('left')">←</button>
+      <button onclick="checkDirection('right')">→</button>
+    </div>
+
+    <!-- 字體大小選擇按鈕 -->
+    <div class="font-size-buttons">
+      <button id="btn-0.1" onclick="changeFontSize(0.1)">0.1</button>
+      <button id="btn-0.2" onclick="changeFontSize(0.2)">0.2</button>
+      <button id="btn-0.3" onclick="changeFontSize(0.3)">0.3</button>
+      <button id="btn-0.4" onclick="changeFontSize(0.4)">0.4</button>
+      <button id="btn-0.5" onclick="changeFontSize(0.5)">0.5</button>
+      <button id="btn-0.6" onclick="changeFontSize(0.6)">0.6</button>
+      <button id="btn-0.7" onclick="changeFontSize(0.7)">0.7</button>
+      <button id="btn-0.8" onclick="changeFontSize(0.8)">0.8</button>
+      <button id="btn-0.9" onclick="changeFontSize(0.9)">0.9</button>
+      <button id="btn-1.0" onclick="changeFontSize(1.0)" class="selected">1.0</button>
+      <button id="btn-1.1" onclick="changeFontSize(1.1)">1.1</button>
+      <button id="btn-1.2" onclick="changeFontSize(1.2)">1.2</button>
+  </div>
+  
+
+    <button onclick="nextLetter()">下一個字母</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
